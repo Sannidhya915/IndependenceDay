@@ -14,10 +14,13 @@
   <title>Happy Independence Day</title>
 
   <script>
-  document.getElementById("Independence").addEventListener("click", function() {
-    var audio = new Audio("Tyrant_bg.mp3");
-    audio.play();
-  });
+    document.addEventListener("DOMContentLoaded", function() {
+      var audio = new Audio("Tyrant_bg.mp3");
+      var title = document.querySelector("h1");
+      title.addEventListener("click", function() {
+        audio.play();
+      });
+    });
   </script>
 
 </head>
