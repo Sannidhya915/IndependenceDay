@@ -14,17 +14,17 @@
   <title>Happy Independence Day</title>
 
   <script>
-    window.onload = function() {
-      var audio = new Audio("Tyrant_bg.mp3");
-      audio.play();
-    };
+  document.getElementById("Independence").addEventListener("click", function() {
+    var audio = new Audio("Tyrant_bg.mp3");
+    audio.play();
+  });
   </script>
 
 </head>
 <body>
   <div class="container">
     <div class="overlay"></div>
-    <div class="content">
+    <div class="content" id="Independence">
       <h1>Happy Independence Day, India!</h1>
       <p>Wishing you a day filled with joy, pride, and unity.</p>
     </div>
